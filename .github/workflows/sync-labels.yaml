@@ -1,0 +1,9 @@
+name: Sync Channel labels
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      - run: npx github-label-sync -a '${{ secrets.GITHUB_TOKEN }}'' -l 'https://raw.githubusercontent.com/channelstudio/.github/labels.yaml' ${{ github.repository }}

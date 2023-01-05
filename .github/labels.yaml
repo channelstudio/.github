@@ -1,0 +1,161 @@
+---
+# Effort
+- name: 'effort: difficult'
+  color: d73a4a
+- name: 'effort: medium'
+  color: fbca04
+- name: 'effort: easy'
+  color: 91ca55
+# Priority
+- name: 'priority: critical'
+  color: fbca04
+  description: Should be fixed or merged as soon as possible.
+  aliases:
+  - 'priority: critical'
+  - 'Priority: Critical'
+- name: 'priority: important'
+  color: fbca04
+  description: Aim to fix or merge within the next couple days.
+  aliases:
+  - 'priority: high'
+  - 'Priority: High'
+- name: 'priority: medium'
+  color: fef2c0
+  description: Valuable fix or merge, but not pressing. You can take your time with
+    this.
+  aliases:
+  - 'priority: medium'
+  - 'Priority: Medium'
+# State
+- name: 'state: approved'
+  color: 91ca55
+  description: Applied automatically once a PR is approved. Can be used for giving
+    a go-ahead to begin working on controversial issues as well.
+  aliases:
+  - approved
+  - 'Status: Approved'
+  - 'status: approved'
+- name: 'state: revision needed'
+  color: ffb8c6
+  description: PR needs code changes (revision has been requested by a reviewer),
+    or issue needs more information or clarity before approval is granted.
+  aliases:
+  - revision needed
+  - 'Status: Revision Needed'
+  - 'status: revision needed'
+- name: 'state: blocked'
+  color: d73a4a
+  description: PR or issue is blocked by some external dependency, which, once solved,
+    allows the issue to be worked upon again.
+  aliases:
+  - blocked
+  - 'Status: Blocked'
+  - 'status: blocked'
+- name: 'state: in progress'
+  color: fbca04
+  description: Issue or PR is currently being worked on by an assignee.
+  aliases:
+  - in progress
+  - on hold
+  - pending
+  - 'Status: In Progress'
+  - 'Status: Review Needed'
+  - watchlist
+- name: 'state: inactive'
+  color: e6e6e6
+  description: No action needed or possible. The issue is either fixed, addressed
+    better by other issues, or just out of product scope.
+  aliases:
+  - invalid
+  - stale
+  - 'Status: Abandoned'
+  - 'status: wontfix'
+  - wont-fix
+  - wontfix
+- name: 'state: duplicate'
+  color: a6a6a6
+  description: Issue is a duplicate of another issue. The other issue should be referenced
+    in the comments.
+  aliases:
+  - duplicate
+  - 'status: duplicate'
+- name: 'state: wontfix'
+  color: '060606'
+  description: Issue is understood and will not be fixed for justification in comments.
+  aliases:
+  - 'status: wontfix'
+  - wont-fix
+  - wontfix
+- name: 'state: in review'
+  color: 7057ff
+  description: PR is being reviewed and should not be updated until it moves to revision
+    needed or the reviewer is contacted with the proposed changes.
+  aliases: []
+# Type
+- name: 'type: bug'
+  color: d73a4a
+  description: An issue indicating that something isn't working, or is working in
+    a strange manner.
+  aliases:
+  - bug
+  - 'Type: Bug'
+- name: 'type: chore'
+  color: fef2c0
+  description: Converting measurements, reorganizing folder structure, adding documentation,
+    and other necessary (but less impactful) tasks.
+  aliases:
+  - chore
+  - dependabot
+  - dependencies
+  - dependency
+  - greenkeeper
+  - legal
+  - maintenance
+  - 'Type: Maintenance'
+  - 'type: maintenance'
+- name: 'type: discussion'
+  color: d4c5f9
+  description: An issue encapsulating a question, proposal or information that requires
+    discussion.
+  aliases:
+  - discussion
+  - feedback
+  - help wanted
+  - idea
+  - Idea
+  - Proposal
+  - proposal
+  - question
+  - 'type: design'
+  - 'Type: Question'
+  - 'type: question'
+- name: 'type: feature'
+  color: 5ebeff
+  description: Brand new functionality, features, pages, workflows, endpoints, etc.
+  aliases:
+  - addition
+  - enhancement
+  - feature
+  - 'type: enhancement'
+  - 'Type: Feature'
+- name: 'type: fix'
+  color: 91ca55
+  description: Iterations on existing features or infrastructure, including refactors.
+  aliases:
+  - fix
+  - improvement
+  - optimization
+  - refactor
+  - 'Type: Fix'
+  - 'Type: Refactoring'
+- name: 'type: security'
+  color: d73a4a
+  description: Something is vulnerable or not secure.
+  aliases:
+  - security
+- name: 'type: testing'
+  color: fbca04
+  description: Related to testing.
+  aliases:
+  - test
+  - testing
