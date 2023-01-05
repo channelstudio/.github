@@ -1,4 +1,6 @@
 name: Sync Channel labels
+on: workflow_dispatch
+
 jobs:
   sync:
     runs-on: ubuntu-latest
