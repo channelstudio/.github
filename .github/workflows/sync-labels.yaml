@@ -1,4 +1,4 @@
-name: Sync Channel labels
+name: Sync labels to @channelstudio
 on: workflow_dispatch
 
 jobs:
@@ -8,4 +8,4 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
-      - run: npx github-label-sync -a '${{ secrets.GITHUB_TOKEN }}'' -l 'https://raw.githubusercontent.com/channelstudio/.github/labels.yaml' ${{ github.repository }}
+      - run: npx github-label-sync -a '${{ secrets.GITHUB_TOKEN }}' -l 'https://raw.githubusercontent.com/channelstudio/main/.github/labels.yaml' ${{ github.repository }}

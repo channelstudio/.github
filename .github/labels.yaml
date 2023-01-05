@@ -21,32 +21,28 @@
   - 'Priority: High'
 - name: 'priority: medium'
   color: fef2c0
-  description: Valuable fix or merge, but not pressing. You can take your time with
-    this.
+  description: Valuable fix or merge, but not pressing.
   aliases:
   - 'priority: medium'
   - 'Priority: Medium'
 # State
 - name: 'state: approved'
   color: 91ca55
-  description: Applied automatically once a PR is approved. Can be used for giving
-    a go-ahead to begin working on controversial issues as well.
+  description: Approved PR or issue.
   aliases:
   - approved
   - 'Status: Approved'
   - 'status: approved'
 - name: 'state: revision needed'
   color: ffb8c6
-  description: PR needs code changes (revision has been requested by a reviewer),
-    or issue needs more information or clarity before approval is granted.
+  description: PR needs code changes or issue needs more information or clarity before approval is granted.
   aliases:
   - revision needed
   - 'Status: Revision Needed'
   - 'status: revision needed'
 - name: 'state: blocked'
   color: d73a4a
-  description: PR or issue is blocked by some external dependency, which, once solved,
-    allows the issue to be worked upon again.
+  description: PR or issue is blocked by some external dependency.
   aliases:
   - blocked
   - 'Status: Blocked'
@@ -63,7 +59,7 @@
   - watchlist
 - name: 'state: inactive'
   color: e6e6e6
-  description: No action needed or possible. The issue is either fixed, addressed
+  description: Issue/PR is either fixed, addressed
     better by other issues, or just out of product scope.
   aliases:
   - invalid
@@ -74,8 +70,7 @@
   - wontfix
 - name: 'state: duplicate'
   color: a6a6a6
-  description: Issue is a duplicate of another issue. The other issue should be referenced
-    in the comments.
+  description: Issue is a duplicate of another issue.
   aliases:
   - duplicate
   - 'status: duplicate'
@@ -88,8 +83,7 @@
   - wontfix
 - name: 'state: in review'
   color: 7057ff
-  description: PR is being reviewed and should not be updated until it moves to revision
-    needed or the reviewer is contacted with the proposed changes.
+  description: PR has review requested or is being reviewed.
   aliases: []
 # Type
 - name: 'type: bug'
@@ -101,7 +95,7 @@
   - 'Type: Bug'
 - name: 'type: chore'
   color: fef2c0
-  description: Converting measurements, reorganizing folder structure, adding documentation,
+  description: Reorganizing folder structure, adding docs,
     and other necessary (but less impactful) tasks.
   aliases:
   - chore
