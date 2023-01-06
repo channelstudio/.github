@@ -1,8 +1,8 @@
 ---
 name: Security
 about: Create an issue relating to security
-title: ''
-labels: ''
+title: '[SECURITY]'
+labels: 'type: security'
 assignees: ''
 
 ---

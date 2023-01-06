@@ -1,16 +1,18 @@
 ---
 name: Bug report
 about: Create a bug report
-title: ''
-labels: ''
+title: '[BUG]'
+labels: 'type: bug'
 assignees: ''
 
 ---
 
 **Describe the bug**
+
 A clear and concise description of what the bug is.
 
 **To Reproduce**
+
 Steps to reproduce the behavior:
 1. Go to '...'
 2. Click on '....'
@@ -18,9 +20,11 @@ Steps to reproduce the behavior:
 4. See error
 
 **Expected behavior**
+
 A clear and concise description of what you expected to happen.
 
 **Screenshots**
+
 If applicable, add screenshots to help explain your problem.
 
 **Platform Details (please complete the following information):**
@@ -30,4 +34,5 @@ If applicable, add screenshots to help explain your problem.
  - Browser Version [e.g. 22]
 
 **Additional context**
+
 Add any other context about the problem here.

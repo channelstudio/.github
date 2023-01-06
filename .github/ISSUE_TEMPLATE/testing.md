@@ -1,8 +1,8 @@
 ---
 name: Testing
 about: Open an issue related to testing
-title: ''
-labels: ''
+title: '[TESTING]'
+labels: 'type: testing'
 assignees: ''
 
 ---
