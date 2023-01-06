@@ -2,7 +2,7 @@
 name: Refactor Request
 about: Request a refactor of the codebase
 title: '[REFACTOR]'
-labels: 'type: fix'
+labels: 'type: enhancement, effort: unknown'
 assignees: ''
 
 ---

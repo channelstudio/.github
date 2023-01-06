@@ -2,7 +2,7 @@
 name: Feature request
 about: Request a feature
 title: '[FEATURE]'
-labels: 'type: feature'
+labels: 'type: feature, effort: unknown'
 assignees: ''
 
 ---

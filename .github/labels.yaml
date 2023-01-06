@@ -6,6 +6,8 @@
   color: fbca04
 - name: 'effort: easy'
   color: 91ca55
+- name: 'effort: unknown'
+  color: e6e6e6
 # Priority
 - name: 'priority: critical'
   color: fbca04
@@ -25,6 +27,12 @@
   aliases:
   - 'priority: medium'
   - 'Priority: Medium'
+- name: 'priority: low'
+  color: 91ca55
+  description: Lowest priority tasks and issues.
+  aliases:
+  - 'priority: low'
+  - 'Priority: low'
 # State
 - name: 'state: approved'
   color: 91ca55
@@ -128,19 +136,20 @@
   description: Brand new functionality, features, pages, workflows, endpoints, etc.
   aliases:
   - addition
-  - enhancement
   - feature
-  - 'type: enhancement'
   - 'Type: Feature'
-- name: 'type: fix'
+- name: 'type: enhancement'
   color: 91ca55
   description: Iterations on existing features or infrastructure, including refactors.
   aliases:
   - fix
+  - enhancement
   - improvement
   - optimization
   - refactor
+  - 'type: fix'
   - 'Type: Fix'
+  - 'Type: Enhancement'
   - 'Type: Refactoring'
 - name: 'type: security'
   color: d73a4a
