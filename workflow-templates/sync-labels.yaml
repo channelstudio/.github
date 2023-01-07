@@ -1,4 +1,4 @@
-name: Sync labels to @channelstudio
+name: \@channelstudio - Synchronize Labels
 on: workflow_dispatch
 
 jobs:

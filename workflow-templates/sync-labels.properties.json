@@ -1,0 +1,5 @@
+{
+  "name": "@channelstudio - Synchronize Labels",
+  "description": "Synchronizes labels with Channel Studio's organization-wide label system. Deletes any labels which do not match new labels or their aliases.",
+  "iconName": "sync-labels"
+}
