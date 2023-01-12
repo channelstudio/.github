@@ -1,0 +1,59 @@
+#
+# create-project.yml
+# author: evan kirkiles
+# created on Fri Jan 06 2023
+# 2023 channel studio
+#
+# This project desires to be able to recreate our Project structure programmatically.
+# However, doing so is not possible with the current state of the GitHub API.
+# It only allows creation of projects, not fine-grained management of their views
+# and custom fields. So, this is left here as reference for anyone who might want
+# to implement a similar functionality in the future.
+name: "Create a Project - @channelstudio"
+
+on:
+  workflow_dispatch:
+    inputs:
+      title:
+        type: string
+        required: true
+        description: 'The title of the new project, e.g. "Channel Music - MVP".'
+
+
+jobs:
+  create-project:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_ORG_LEVEL_ACCESS_TOKEN }}
+    steps:
+      - name: Get user or organization data
+        run: |
+          gh api -H "Accept: application/vnd.github+json" /users/${GITHUB_REPOSITORY%/*} > org_data.json
+          echo 'ORGANIZATION_ID='$(jq '.id' org_data.json) >> $GITHUB_ENV
+      - name: Get repository data
+        run: |
+          gh api -H "Accept: application/vnd.github+json" $GITHUB_REPOSITORY > repo_data.json
+          echo 'REPOSITORY_ID='$(jq '.id' repo_data.json) >> $GITHUB_ENV
+      - name: Create project linked to repository
+        run: |
+          gh api graphql -f query='
+            mutation($owner:ID!, $repository:ID!, $title:String!){
+              createProjectV2(input: { 
+                ownerId: $owner, 
+                repositoryId: $repository, 
+                title: $title
+              }) {
+                projectV2 {
+                  id
+                  number
+                  title
+                }
+              }
+            }' -f owner=$ORGANIZATION_ID \
+               -f repository=$REPOSITORY_ID \
+               -f title="${{ inputs.title }}" > project_data.json
+          
+          echo 'PROJECT_ID='$(jq '.data.createProjectV2.projectV2.id') >> $GITHUB_ENV
+          echo 'PROJECT_NUMBER=''$(jq '.data.createProjectV2.projectV2.number') >> $GITHUB_ENV
+          echo 'Successfully created project "${{ inputs.title }}"!\nFor next steps, visit the Notion Project setup document at:\n'
+

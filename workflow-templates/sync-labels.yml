@@ -1,0 +1,17 @@
+#
+# sync-labels.yml
+# author: evan kirkiles
+# created on Fri Jan 06 2023
+# 2023 channel studio
+#
+name: "Synchronize Labels - @channelstudio"
+on: workflow_dispatch
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      - run: npx github-label-sync -a '${{ secrets.GITHUB_TOKEN }}' -l 'https://raw.githubusercontent.com/channelstudio/main/.github/labels.yaml' ${{ github.repository }}

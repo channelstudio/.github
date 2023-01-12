@@ -1,0 +1,70 @@
+---
+# Type
+- name: 'type: bug'
+  color: d73a4a
+  description: An issue indicating that something isn't working, or is working in
+    a strange manner.
+  aliases:
+  - bug
+  - 'Type: Bug'
+- name: 'type: chore'
+  color: fef2c0
+  description: Reorganizing folder structure, adding docs,
+    and other necessary (but less impactful) tasks.
+  aliases:
+  - chore
+  - dependabot
+  - dependencies
+  - dependency
+  - greenkeeper
+  - legal
+  - maintenance
+  - 'Type: Maintenance'
+  - 'type: maintenance'
+- name: 'type: discussion'
+  color: d4c5f9
+  description: An issue encapsulating a question, proposal or information that requires
+    discussion.
+  aliases:
+  - discussion
+  - feedback
+  - help wanted
+  - idea
+  - Idea
+  - Proposal
+  - proposal
+  - question
+  - 'type: design'
+  - 'Type: Question'
+  - 'type: question'
+- name: 'type: feature'
+  color: 5ebeff
+  description: Brand new functionality, features, pages, workflows, endpoints, etc.
+  aliases:
+  - addition
+  - feature
+  - 'Type: Feature'
+- name: 'type: enhancement'
+  color: 91ca55
+  description: Iterations on existing features or infrastructure, including refactors.
+  aliases:
+  - fix
+  - enhancement
+  - improvement
+  - optimization
+  - refactor
+  - 'type: fix'
+  - 'Type: Fix'
+  - 'Type: Enhancement'
+  - 'Type: Refactoring'
+- name: 'type: security'
+  color: d73a4a
+  description: Something is vulnerable or not secure.
+  aliases:
+  - security
+- name: 'type: testing'
+  color: fbca04
+  description: Related to testing.
+  aliases:
+  - test
+  - testing
