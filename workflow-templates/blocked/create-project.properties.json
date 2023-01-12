@@ -1,0 +1,5 @@
+{
+  "name": "Create a Project - @channelstudio",
+  "description": "Creates a GitHub Project in the organization linked to your repository.",
+  "iconName": "create-project"
+}

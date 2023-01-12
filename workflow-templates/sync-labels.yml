@@ -1,4 +1,10 @@
-name: \@channelstudio - Synchronize Labels
+#
+# sync-labels.yml
+# author: evan kirkiles
+# created on Fri Jan 06 2023
+# 2023 channel studio
+#
+name: "Synchronize Labels - @channelstudio"
 on: workflow_dispatch
 
 jobs:
